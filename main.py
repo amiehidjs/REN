@@ -18,9 +18,9 @@ import logging
 import psutil
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-logger = logging.getLogger("REN-Gateway")
+logger = logging.getLogger("amir-Gateway")
 
-app = FastAPI(title="REN", docs_url=None, redoc_url=None)
+app = FastAPI(title="amir", docs_url=None, redoc_url=None)
 
 CONFIG = {
     "port": int(os.environ.get("PORT", 8000)),
